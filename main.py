@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import cudf
 import cugraph
 
 data = cudf.read_csv('min2d.csv', names=['src', 'dst', 'wt'], dtype=['int32', 'int32', 'float32'])
